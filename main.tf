@@ -45,10 +45,6 @@ resource "tls_cert_request" "server" {
   }
 
   dns_names = [
-    # Consul
-    
-    "*.service.consul",
-    "*.service.${var.region}.consul",
     "*.query.consul",
     "consul.service.consul",
 
